@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="Formulario d-flex justify-content-center">
+        <div class="container">
+            <div class="letra fs-sm-5">
+                <h2>Contact Us</h2>
+                <h1>Fill Out The Form Below To <span>Get</span> In <span class="span2">Touche</span> With US</h1>
+            </div>
+            
+            <form>
+                <div class="row">
+                    <div class="mb-3 col-12 col-sm-6">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3 col-12 col-sm-6">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                    </div>
+                    
+                    <div class="mb-3 col-12 col-sm-6">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                        <select class="form-select" aria-label="Default select example">
+                        <option selected>Opciones</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>  
+                    </div>
+                    
+                    <div class="mb-3 col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div> 
+                </div>                  
+                        <button id="myBtn" type="button" class="btn"><i class='bx bxs-send d-flex justify-content-center'></i></button>
+                        <button id="myBtn2" type="button" class="btn btn-outline"><p>Send Message Now</p></button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="container2">
+                                <div class="row">
+                                <div class="col-12 text-center"><i class='bx bx-map bx-md'></i></div>
+                                <div class="col-12 text-center">Av. del Tèxtil, 47, 08223</div>
+                                <div class="col-12 text-center"><i class='bx bxs-envelope bx-md' ></i></div>
+                                <div class="col-12 text-center">lorem@gmail.com</div>
+                                <div class="col-12 text-center"><i class='bx bx-phone bx-md'></i></div>
+                                <div class="col-12 text-center">+34 954-316-875</div>
+                                <div class="col-7"><span class="close">&times;</span></div>
+                                </div>
+                                
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+            </form>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
